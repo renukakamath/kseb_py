@@ -1,0 +1,28 @@
+{% include 'admin/admin_header.html' %}
+
+<h1 align="center">View Notification</h1>
+<br>
+<br>
+<br>
+<center>
+<a align="center" href="/adminaddnotification">Add Notification</a>
+<br>
+
+<table style="width:1000px !important;">
+    <tr>
+         <td>Notification Type</td>
+         <td>Description</td>
+         <td>Date</td>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row['notificationtype'] }}</td>
+        <td>{{ row['description'] }}</td>
+        <td>{{ row['date'] }}</td>
+         <td><a href="?id={{row['noti_id']}}&delete=1">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</center>
+{% include 'admin/admin_footer.html' %}

@@ -1,0 +1,30 @@
+{% include 'admin/admin_header.html' %}
+
+<h1 align="center">View Tariff</h1>
+<br>
+<br>
+<br>
+<center>
+<a align="center"  href="/adminaddtariff" >Add Tariff</a>
+<br>
+
+<table style="width:1000px !important;">
+    <tr>
+         <td>Connection Type</td>
+         <td>Maximum Usage</td>
+         <td>Minimum Usage</td>
+         <td>Amunt</td>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row['connection_type'] }}</td>
+        <td>{{ row['minimum_usage'] }}</td>
+        <td>{{ row['maximum_usage'] }}</td>
+        <td>{{ row['amount_per_unit'] }}</td>
+         <td><a href="?id={{row['tariff_id']}}&delete=1">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</center>
+{% include 'admin/admin_footer.html' %}

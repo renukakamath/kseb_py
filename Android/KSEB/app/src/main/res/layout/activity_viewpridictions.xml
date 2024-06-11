@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="#A2D2F2"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Prediction"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+    <EditText
+        android:id="@+id/ethumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="Humidity" />
+    <EditText
+        android:id="@+id/etholidays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="Holidays" />
+    <EditText
+        android:id="@+id/etmintemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="MIN-Temp" />
+    <EditText
+        android:id="@+id/etmaxtemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="MAX-Temp" />
+
+
+
+            <EditText
+        android:id="@+id/etrainfall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="Rain Fall" />
+
+    <Button
+        android:id="@+id/btpredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Predict" />
+
+            <TextView
+                android:id="@+id/tvpreicted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>

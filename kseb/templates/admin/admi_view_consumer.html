@@ -1,0 +1,33 @@
+{% include 'admin/admin_header.html' %}
+
+<h1 align="center">View Consumer</h1>
+<br>
+<br>
+<br>
+<br>
+<table rowspan="5" colspan="5" border="1">
+        
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>house name</td>
+        <td>place</td>
+        <td>pincode</td>
+        <td>phone</td>
+        <td>email</td>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{row['f_name']}}</td>
+        <td>{{row['l_name']}}</td>
+        <td>{{row['h_name']}}</td>
+        <td>{{row['place']}}</td>
+        <td>{{row['pincode']}}</td>
+        <td>{{row['phone']}}</td>
+        <td>{{row['email']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% include 'admin/admin_footer.html' %}

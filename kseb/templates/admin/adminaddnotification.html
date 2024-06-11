@@ -1,0 +1,31 @@
+{% include 'admin/admin_header.html' %}
+
+<h1 align="center">Add Notification</h1>
+<br>
+<br>
+<br>
+<br>
+<form method="post">
+    <center>
+<table style="width:1000px !important;">
+	 <tr>
+        <td>Notification Type</td>
+        <td><select name="type">
+            <option Selected>Select</option>
+            <option>Home</option>
+            <option>Industrial</option>
+        </select>
+        </td>
+    </tr>
+    <tr>
+    	<td>Description</td>
+    	<td><textarea name="desc" required=""></textarea></td>
+    </tr>
+    <tr>
+    	<td align="center" colspan="2"><input type="submit" name="Add"></td>
+    </tr>
+</table>
+</center>
+</form>
+
+{% include 'admin/admin_footer.html' %}

@@ -1,0 +1,47 @@
+{% include 'admin/admin_header.html' %}
+<h1 align="center">UPDATE DETAILS</h1>
+
+<form action="" method="post">
+<center>
+      <table style="width:1000px !important;">
+          <tr>
+          <td><input type="hidden" name="hidden" value="{{data[0][cons_id]}}"></td>
+          </tr>
+
+          <tr>
+              <td>FIRST NAME</td>
+              <td><input type="text" name="f_name" value="{{data[0]['f_name']}}"></td>
+          </tr>
+          <tr>
+              <td>LAST NAME</td>
+              <td><input type="text" name="l_name" value="{{data[0]['l_name']}}"></td>
+          </tr>
+          <tr>
+              <td>HOME NAME</td>
+              <td><input type="text" name="h_name" value="{{data[0]['h_name']}}"></td>
+          </tr>
+          <tr>
+              <td>PLACE</td>
+              <td><input type="text" name="place" value="{{data[0]['place']}}"></td>
+          </tr>
+          <tr>
+              <td>PINCODE</td>
+              <td><input type="text" name="pincode" value="{{data[0]['pincode']}}"></td>
+          </tr>
+          <tr>
+              <td>PHONE</td>
+              <td><input type="text" name="phone" value="{{data[0]['phone']}}"></td>
+          </tr>
+          <tr>
+              <td>EMAIL</td>
+              <td><input type="text" name="email" value="{{data[0]['email']}}"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><input type="submit" name="update" value="update"></td>
+          </tr>
+      </table>
+      </center>
+    </form>
+
+{% include 'admin/admin_footer.html' %}
